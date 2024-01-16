@@ -2,7 +2,7 @@ import React from 'react'
 import { teslaLogo } from '../../public/assets'
 const NavBar = () => {
   return (
-        <div className="navbar fixed z-10">
+        <div className="navbar fixed z-10 pt-5">
             <div className="navbar-start">
                 <a className="btn btn-ghost text-xl">
                     <img src={teslaLogo.src} alt="" />
