@@ -5,23 +5,29 @@ import LeftButton from "./LeftButton";
 import RightButton from "./RightButton";
 import { model3 } from "../../public/assets";
 
-const Section = () => {
+
+interface SectionProps {
+    title: string,
+    description: string,
+    leftBtnText: string,
+    rightBtnText: string,
+    backgrndImg: string
+}
+
+const Section = ({title, description, leftBtnText, rightBtnText, backgrndImg}: SectionProps) => {
   return (
-    <div
-      className="w-screen h-screen bg-orange flex flex-col justify-between items-center bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${model3.src})` }}
-    >
-      <Fade>
-        <div className="pt-[15vh] text-center">
-          <h1>Model S</h1>
-          <p>Order online for Touchless Delivery</p>
+    <div className="w-screen h-screen bg-orange flex flex-col justify-between items-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${backgrndImg + '.src'})` }}>
+      <Fade direction="up">
+        <div className="mt-[15vh] text-center text-black">
+          <h1 className="font-semibold text-[2em] text-customGray">{title}</h1>
+          <p className="text-[1em] text-customGray">{description}</p>
         </div>
       </Fade>
       <div>
-        <Fade>
+        <Fade direction="up">
           <div className="md:flex mb-[30px]">
-            <LeftButton></LeftButton>
-            {<RightButton></RightButton>}
+            <LeftButton>{leftBtnText}</LeftButton>
+            {<RightButton>{rightBtnText}</RightButton>}
           </div>
         </Fade>
       </div>

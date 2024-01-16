@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 
-const LeftButton = () => {
+interface LeftButtonProps {
+  children: ReactNode;
+}
+const LeftButton: React.FC<LeftButtonProps> = ({children}) => {
   return (
-    <button className="btn bg-opacity-80 bg-gray-800 h-[40px] w-64 text-white flex justify-center items-center rounded-[100px] opacity-85 uppercase text-xs cursor-pointer m-2">
-        Left Button
+    <button className="btn bg-opacity-80 bg-gray-800 h-[40px] border-none outline-none w-64 text-white flex justify-center items-center rounded-[100px] opacity-85 uppercase text-xs cursor-pointer m-2">
+      {children}
     </button>
   )
 }
