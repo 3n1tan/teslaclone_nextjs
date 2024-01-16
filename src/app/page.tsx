@@ -1,12 +1,13 @@
-import LeftButton from "@/components/LeftButton"
-import RightButton from "@/components/RightButton"
-
+import Section from "@/components/Section";
+import NavBar from "@/components/NavBar";
 export default function Home() {
   return (
     <div>
-      <h1>Hello World</h1>
-      <RightButton />
-      <LeftButton />
+      <NavBar />
+      <Section />
+      <Section />
+      <Section />
+      <Section />
     </div>
-  )
+  );
 }
