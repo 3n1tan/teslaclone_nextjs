@@ -8,7 +8,7 @@ const NavBar = () => {
                     <img src={teslaLogo.src} alt="" />
                 </a>
             </div>
-            <div className='navbar-center text-customGray space-x-5 uppercase font-[600]  '>
+            <div className='navbar-center text-customGray space-x-5 uppercase font-[600] hidden lg:flex'>
                 <div>
                     <a href="" className='cursor-pointer'>
                         Model S
