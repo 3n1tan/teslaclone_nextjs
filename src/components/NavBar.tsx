@@ -1,6 +1,14 @@
-import React from 'react'
+'use client'
+import React, {useState} from 'react'
 import { teslaLogo } from '../../public/assets'
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 const NavBar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const closeMenu = () => {
+        setMenuOpen(false)
+    }
   return (
         <div className="navbar fixed z-10 pt-5">
             <div className="navbar-start">
@@ -32,14 +40,25 @@ const NavBar = () => {
             </div>
             <div className="navbar-end">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 text-black stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <div tabIndex={0} role="button" className="btn btn-ghost " onClick={()=> setMenuOpen(true)}>
+                        <MenuIcon className='text-black'/>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Homepage</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
-                    </ul>
+                    <div className=' '>
+                        <ul tabIndex={0} className={`menu menu-sm dropdown-content z-16 top-0 right-0 sm:w-[40rem] w-[15rem] p-10 grid text-left shadow bg-white rounded-md transition-transform ease-in-out duration-300`} style={{ transform: menuOpen ? 'translateX(0)' : 'translateX(100%)' }}>
+                        
+                            <div className='flex justify-end'>
+                                 <CloseIcon className='cursor-pointer' onClick={closeMenu}/>
+                            </div>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model S</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model S</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model S</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model S</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model S</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model S</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model S</a></li>
+                         
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
