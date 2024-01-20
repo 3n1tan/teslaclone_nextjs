@@ -5,49 +5,72 @@ const FinalDisplay = () => {
     <div>
         <Section 
             title="Model 3"
-            description='Order online for Touchless Delivery'
+            description='Lease starting at $329/mo*'
+            more_description=""
             leftBtnText='Custom Order'
             rightBtnText='Existing Inventory'
-            bgImage='model-3'            
-        />
-        <Section 
-            title="Model X"
-            description='Order online for Touchless Delivery'
-            leftBtnText='Custom Order'
-            rightBtnText='Existing Inventory'
-            bgImage='model-x'            
-        />
-        <Section 
-            title="Model S"
-            description='Order online for Touchless Delivery'
-            leftBtnText='Custom Order'
-            rightBtnText='Existing Inventory'
-            bgImage='model-s'            
+            bgImage='model3'            
         />
         <Section 
             title="Model Y"
             description='Order online for Touchless Delivery'
+            more_description="after federal tax credit & est. gas savings"
             leftBtnText='Custom Order'
             rightBtnText='Existing Inventory'
-            bgImage='model-y'            
+            bgImage='modelY'            
         />
         <Section 
-            title="Lowest Cost Solar Panels in America"
-            description='Money-back guarantee'
-            leftBtnText='Order Now'
+            title="Model X"
+            description='From $68,590*'
+            more_description="after federal tax credit & est. gas savings"
+            leftBtnText='Custom Order'
             rightBtnText='Existing Inventory'
-            bgImage='solar-panel'            
+            bgImage='modelX'            
         />
         <Section 
-            title="Solar for New Roofs"
-            description='Solar Roof Costs Less Than a new roof Plus Solar Panels'
+            title="Model S"
+            description='From $71,090*'
+            more_description="after est. gas savings"
+            leftBtnText='Custom Order'
+            rightBtnText='Existing Inventory'
+            bgImage='modelS'            
+        />
+        <Section 
+            title=""
+            description=''
+            more_description=""
+            leftBtnText='Order Now'
+            rightBtnText='Learn More'
+            bgImage='cyberTruck'            
+        />
+        <Section 
+            title="Solar Panels"
+            description=''
+            more_description="Schedule a Virtual Consultation"
             leftBtnText='Order Now'
             rightBtnText='Learn More'
             bgImage='solar-panel'            
         />
         <Section 
+            title="Solar Roof"
+            description=''
+            more_description="Produce Clean Energy From Your Roof"
+            leftBtnText='Order Now'
+            rightBtnText='Learn More'
+            bgImage='solar-panel'            
+        />
+        <Section 
+            title="Powerwall"
+            description=''
+            more_description=""
+            leftBtnText='Order Now'
+            rightBtnText='Learn More'
+            bgImage='powerWall'            
+        />
+        <Section 
             title="Accessories"
             description=''
+            more_description=""
             leftBtnText='Shop Now'
             rightBtnText=''
             bgImage='accessories'            

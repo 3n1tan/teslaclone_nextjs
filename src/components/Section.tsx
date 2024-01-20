@@ -3,13 +3,12 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import LeftButton from "./LeftButton";
 import RightButton from "./RightButton";
-import { model3 } from "../../public/assets";
-import Image from "next/image";
 
 
 interface SectionProps {
     title: string,
     description: string,
+    more_description: String,
     leftBtnText: string,
     rightBtnText: string,
     bgImage: string
@@ -17,13 +16,17 @@ interface SectionProps {
 }
 
 
-const Section = ({title, description, leftBtnText, rightBtnText, bgImage}: SectionProps ) => {
+const Section = ({title, description, more_description, leftBtnText, rightBtnText, bgImage}: SectionProps ) => {
+  
   return (
-    <div className="w-screen h-screen bg-orange flex flex-col justify-between items-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(/assets/${bgImage}.jpg)` }}>
+    <div className="w-screen h-screen bg-orange flex flex-col justify-between items-center bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(/assets/${bgImage}.avif)`|| `url(/assets/${bgImage}.jpg)` && `url(/assets/${bgImage}.mp4)` 
+    }}>
       <Fade direction="up">
         <div className="mt-[15vh] text-center text-black">
-          <h1 className="font-semibold text-[2em] text-customGray">{title}</h1>
-          <p className="text-[1em] text-customGray">{description}</p>
+          <h1 className="font-medium tracking-wider text-[35px] text-customGray">{title}</h1>
+          <p className="text-[22px] font-light text-customGray tracking-wide">{description}</p>
+          <p className="text-[16px] capitalize font-light text-customGray tracking-wide">{more_description}</p>
         </div>
       </Fade>
       <div>

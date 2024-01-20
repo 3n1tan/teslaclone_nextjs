@@ -16,35 +16,30 @@ const NavBar = () => {
                     <img src={teslaLogo.src} alt="" />
                 </a>
             </div>
-            <div className='navbar-center text-customGray space-x-10 uppercase font-[600] hidden lg:flex'>
+            <div className='navbar-center text-customGray space-x-10 capitalize font-[400] hidden lg:flex'>
                 <div>
                     <a href="" className='cursor-pointer'>
-                        Model S
+                        Vehicles
                     </a>
                 </div>
                 <div>
                     <a href="" className='cursor-pointer'>
-                        Model 3
+                        Energy
                     </a>
                 </div>
                 <div>
                     <a href="" className='cursor-pointer'>
-                        Model X
+                        Charging
                     </a>
                 </div>
                 <div>
                     <a href="" className='cursor-pointer'>
-                        Model Y
+                        Discover
                     </a>
                 </div>
                 <div>
                     <a href="" className='cursor-pointer'>
-                        Solar Panel
-                    </a>
-                </div>
-                <div>
-                    <a href="" className='cursor-pointer'>
-                        Solar roof
+                        Shop
                     </a>
                 </div>
             </div>

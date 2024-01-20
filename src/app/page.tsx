@@ -3,7 +3,6 @@ import FinalDisplay from "@/components/FinalDisplay";
 export default function Home() {
   return (
     <div>
-      <NavBar />
       <FinalDisplay />
     </div>
   );
