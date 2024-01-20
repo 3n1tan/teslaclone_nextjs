@@ -8,7 +8,7 @@ const FinalDisplay = () => {
             description='Lease starting at $329/mo*'
             more_description=""
             leftBtnText='Custom Order'
-            rightBtnText='Existing Inventory'
+            rightBtnText='learn more'
             bgImage='model3'            
         />
         <Section 
@@ -16,7 +16,7 @@ const FinalDisplay = () => {
             description='Order online for Touchless Delivery'
             more_description="after federal tax credit & est. gas savings"
             leftBtnText='Custom Order'
-            rightBtnText='Existing Inventory'
+            rightBtnText='demo drive'
             bgImage='modelY'            
         />
         <Section 

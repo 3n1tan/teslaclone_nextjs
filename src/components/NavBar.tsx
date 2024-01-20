@@ -16,7 +16,7 @@ const NavBar = () => {
                     <img src={teslaLogo.src} alt="" />
                 </a>
             </div>
-            <div className='navbar-center text-customGray space-x-10 capitalize font-[400] hidden lg:flex'>
+            <div className='navbar-center text-customGray space-x-10 capitalize font-[400] hidden lg:flex mx-5'>
                 <div>
                     <a href="" className='cursor-pointer'>
                         Vehicles
