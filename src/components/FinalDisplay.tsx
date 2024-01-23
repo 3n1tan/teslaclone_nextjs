@@ -17,7 +17,8 @@ const FinalDisplay = () => {
             more_description="after federal tax credit & est. gas savings"
             leftBtnText='Custom Order'
             rightBtnText='demo drive'
-            bgImage='modelY'            
+            bgImage=''     
+                
         />
         <Section 
             title="Model X"
@@ -44,6 +45,14 @@ const FinalDisplay = () => {
             bgImage='cyberTruck'            
         />
         <Section 
+            title="Experience Tesla"
+            description=''
+            more_description="schedule a demo drive today"
+            leftBtnText='Demo Drive'
+            rightBtnText=''
+            bgImage=''            
+        />
+        <Section 
             title="Solar Panels"
             description=''
             more_description="Schedule a Virtual Consultation"
@@ -57,7 +66,7 @@ const FinalDisplay = () => {
             more_description="Produce Clean Energy From Your Roof"
             leftBtnText='Order Now'
             rightBtnText='Learn More'
-            bgImage='solar-panel'            
+            bgImage='solarRoof'            
         />
         <Section 
             title="Powerwall"
