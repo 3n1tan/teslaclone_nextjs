@@ -3,6 +3,10 @@ import React, {useState} from 'react'
 import { teslaLogo } from '../../public/assets'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import LanguageIcon from '@mui/icons-material/Language';
+import LanguageSharpIcon from '@mui/icons-material/LanguageSharp';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -43,8 +47,35 @@ const NavBar = () => {
                     </a>
                 </div>
             </div>
-            <div className="navbar-end">
-                <div className="dropdown">
+            <div className="navbar-end space-x-5 pr-[5rem] ">
+                <div>
+                    <HelpOutlineIcon className='text-black' />
+                </div>
+                <div>
+                    <LanguageSharpIcon className='text-black' />
+                </div>
+                <div className='dropdown'>
+                    <div tabIndex={0} role='button' onClick={()=> setMenuOpen(true)}>
+                        <AccountCircleOutlinedIcon className='text-black' />
+                    </div>
+                    <div>
+                        <ul tabIndex={0} className={`menu menu-sm mt-[-1rem] dropdown-content z-16 h-[50vh w-[100vw] top-0 right-0 fixed maflex flex-col text-left bg-white rounded-md`} style={{ transform: menuOpen ? 'translateY(0)' : 'translateY(-140%)' }}>              
+                            <div className='flex justify-end'>
+                                 <CloseIcon className='cursor-pointer' onClick={closeMenu}/>
+                            </div>
+                            <li className='pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model S</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model 3</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model X</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Model Y</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Solar Panel</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Solar Roof</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Cybertruck</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Accessories</a></li>
+                            <li className=' pt-[15px] pb-[15px] border-b-[2px]'><a className='font-bold'>Batteries</a></li>                        
+                        </ul>
+                    </div>
+                </div>
+                <div className="dropdown sm:hidden block">
                     <div tabIndex={0} role="button" className="btn btn-ghost" onClick={()=> setMenuOpen(true)}>
                         <MenuIcon className='text-black'/>
                     </div>

@@ -21,7 +21,7 @@ const Section = ({title, description, more_description, leftBtnText, rightBtnTex
   return (
       <div className="w-screen h-screen bg-orange flex flex-col justify-between items-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(/assets/${bgImage}.avif)` }}>
         <Fade direction="up">
-          <div className="mt-[15vh] text-center text-black w-screen">
+          <div className="mt-[10vh] text-center text-black w-screen">
             <h1 className="font-medium tracking-wider text-[35px] text-customGray">{title}</h1>
             <p className="text-[22px] font-light text-customGray tracking-wide">{description}</p>
             <p className="text-[14px] capitalize font-light text-customGray tracking-tight">{more_description}</p>

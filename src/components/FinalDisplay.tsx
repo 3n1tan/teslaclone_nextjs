@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from './Section'
+import VideoSection from './VideoSection'
 const FinalDisplay = () => {
   return (
     <div>
@@ -11,15 +12,22 @@ const FinalDisplay = () => {
             rightBtnText='learn more'
             bgImage='model3'            
         />
-        <Section 
+        <VideoSection 
+            title='Model Y'
+            description='Lease starting at $379/mo*'
+            more_description=''
+            leftBtnText='Custom Order'
+            rightBtnText='Demo Drive'
+            bgImg='modelY.mp4'
+        />
+        {/* <Section 
             title="Model Y"
             description='Order online for Touchless Delivery'
             more_description="after federal tax credit & est. gas savings"
             leftBtnText='Custom Order'
             rightBtnText='demo drive'
-            bgImage=''     
-                
-        />
+            bgImage='modelY'       
+        /> */}
         <Section 
             title="Model X"
             description='From $68,590*'
@@ -44,14 +52,22 @@ const FinalDisplay = () => {
             rightBtnText='Learn More'
             bgImage='cyberTruck'            
         />
-        <Section 
+        <VideoSection 
+            title='Experience Tesla'
+            description=''
+            more_description='Schedule a Demo Drive Today'
+            leftBtnText='Demo Drive'
+            rightBtnText=''
+            bgImg='demo_drive.webm'
+        />
+        {/* <Section 
             title="Experience Tesla"
             description=''
             more_description="schedule a demo drive today"
             leftBtnText='Demo Drive'
             rightBtnText=''
             bgImage=''            
-        />
+        /> */}
         <Section 
             title="Solar Panels"
             description=''
