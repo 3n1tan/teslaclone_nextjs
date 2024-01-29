@@ -14,7 +14,7 @@ const NavBar = () => {
         setMenuOpen(false)
     }
   return (
-        <div className="navbar z-10 fixed pt-5">
+        <div className="navbar z-[-100] fixed pt-5">
             <div className="navbar-start">
                 <a className="btn btn-ghost text-xl">
                     <img src={teslaLogo.src} alt="" />
