@@ -60,14 +60,6 @@ const FinalDisplay = () => {
         rightBtnText=""
         bgImg="demo_drive.webm"
       />
-      {/* <Section 
-            title="Experience Tesla"
-            description=''
-            more_description="schedule a demo drive today"
-            leftBtnText='Demo Drive'
-            rightBtnText=''
-            bgImage=''            
-        /> */}
       <Section
         title="Solar Panels"
         description=""
