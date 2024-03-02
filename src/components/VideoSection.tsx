@@ -49,7 +49,6 @@ const VideoSection = ({
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </div>
         </Fade>
-        {/* <img src="/assets/down-arrow.svg" alt="" className="h-[40px] sm:ml-[15rem] ml-[30vw] animate-bounce infinite duration-1500 overflow-hidden"/> */}
       </div>
     </div>
   );
