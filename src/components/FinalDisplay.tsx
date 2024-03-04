@@ -20,14 +20,6 @@ const FinalDisplay = () => {
         rightBtnText="Demo Drive"
         bgImg="modelY.mp4"
       />
-      {/* <Section 
-            title="Model Y"
-            description='Order online for Touchless Delivery'
-            more_description="after federal tax credit & est. gas savings"
-            leftBtnText='Custom Order'
-            rightBtnText='demo drive'
-            bgImage='modelY'       
-        /> */}
       <Section
         title="Model X"
         description="From $68,590*"
